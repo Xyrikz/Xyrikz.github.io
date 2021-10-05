@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Website Example 1</title>
+		<link rel="stylesheet" href="webex1.css" />
+		<script src="webex1.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbutton" onclick="window.location.href = 'webex1.html'">
+				<div class="fas fa-home"></div>
+			</div>
+		</div>
+
+		<div class="slider">
+			<div class="slides">
+				<!-- it is important that the inputs are before everything else -->
+				<input type="radio" name="radio-button" id="radio1" class="radio" />
+				<input type="radio" name="radio-button" id="radio2" class="radio" />
+				<input type="radio" name="radio-button" id="radio3" class="radio" />
+
+				<div class="slide first">
+					<img src="../images/image1.jpg" alt="" />
+				</div>
+				<div class="slide second">
+					<img src="../images/image2.jpg" alt="" />
+				</div>
+				<div class="slide third">
+					<img src="../images/image3.jpg" alt="" />
+				</div>
+
+				<div class="nav-auto">
+					<div class="auto-button1"></div>
+					<div class="auto-button2"></div>
+					<div class="auto-button3"></div>
+				</div>
+			</div>
+
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-button"></label>
+				<label for="radio2" class="manual-button"></label>
+				<label for="radio3" class="manual-button"></label>
+			</div>
+		</div>
+	</body>
+</html>
