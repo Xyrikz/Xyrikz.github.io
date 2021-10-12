@@ -1,5 +1,9 @@
-document.getElementById('homebutton').addEventListener('click', redirectHome);
-
-function redirectHome() {
-	window.location.href = 'index.html';
-}
+document.getElementById('radio1').checked = true;
+let slide = 2;
+setInterval(function () {
+	document.getElementById('radio' + slide).checked = true;
+	slide++;
+	if (slide > 3) {
+		slide = 1;
+	}
+}, 5000);
