@@ -149,7 +149,8 @@ body {
 .divider {
 	height: 1px;
 	width: 65vw;
-	background-color: black;
+	background-color: rgb(100, 100, 100);
+	box-shadow: 0 0 5px rgb(100, 100, 100);
 }
 
 .content-box {
@@ -167,12 +168,12 @@ body {
 }
 
 .content-header {
-	font-size: 35px;
+	font-size: 40px;
 	margin: 0;
 }
 
 .content-text {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 30px;
 	margin-top: 4vh;
 }
