@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Website Example 1</title>
+		<meta name="description" content="Write website description here" />
+		<meta name="keywords" content="add keywords seperated by commas" />
 		<link rel="stylesheet" href="webex1.css" />
 		<script src="webex1.js" defer></script>
 		<link
@@ -15,6 +17,7 @@
 		/>
 	</head>
 	<body>
+		<!-- <a name="top"></a> -->
 		<div class="nav-container">
 			<div class="navbar">
 				<div class="navbutton" onclick="window.location.href = 'webex1.html'">
@@ -32,9 +35,9 @@
 				<div class="navbutton flex-right" onclick="window.location.href = 'webex1.html'">
 					<p>Menu Item 4</p>
 				</div>
-				<div class="navbutton" onclick="window.location.href = 'webex1.html'">
+				<a class="navbutton nav-link" href="#contact">
 					<p>Contact</p>
-				</div>
+				</a>
 			</div>
 		</div>
 
@@ -68,50 +71,86 @@
 			</div>
 		</div>
 
-		<div class="container top-margin">
+		<div class="container margin-top">
 			<h1 class="main-header">Title / Heading / Text</h1>
-			<div class="divider top-margin"></div>
-			<div class="content-box top-margin">
+			<div class="divider margin-top" id="content-1"></div>
+			<div class="content-box margin-top">
 				<div class="text-box">
 					<h2 class="content-header">Sub Title / Heading 1</h2>
 					<p class="content-text">
-						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam.
-						Incidunt possimus repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam
-						itaque, inventore qui ducimus blanditiis excepturi cum. Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Consequatur deserunt, cum debitis obcaecati, impedit quod quidem rerum
-						accusamus, sapiente error est esse magnam vel! Voluptatum reiciendis dignissimos obcaecati
-						doloremque soluta?
+						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam. Incidunt possimus
+						repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam itaque, inventore qui ducimus
+						blanditiis excepturi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deserunt, cum debitis
+						obcaecati, impedit quod quidem rerum accusamus, sapiente error est esse magnam vel! Voluptatum reiciendis
+						dignissimos obcaecati doloremque soluta?
 					</p>
 				</div>
 				<img class="small-img margin-left" src="../images/image1-l.jpg" alt="" />
 			</div>
-			<div class="divider top-margin"></div>
-			<div class="content-box top-margin">
+			<div class="divider margin-top" id="content-2"></div>
+			<div class="content-box margin-top">
 				<img class="small-img margin-right" src="../images/image2-l.jpg" alt="" />
 				<div class="text-box">
 					<h2 class="content-header">Sub Title / Heading 2</h2>
 					<p class="content-text">
-						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam.
-						Incidunt possimus repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam
-						itaque, inventore qui ducimus blanditiis excepturi cum. Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Hic, maxime, animi ipsam mollitia numquam at similique nihil totam quam
-						deleniti distinctio asperiores quis inventore possimus quas. Est consequuntur labore eaque!
+						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam. Incidunt possimus
+						repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam itaque, inventore qui ducimus
+						blanditiis excepturi cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, maxime, animi ipsam
+						mollitia numquam at similique nihil totam quam deleniti distinctio asperiores quis inventore possimus quas. Est
+						consequuntur labore eaque!
 					</p>
 				</div>
 			</div>
-			<div class="divider top-margin"></div>
-			<div class="content-box top-margin">
+			<div class="divider margin-top" id="content-3"></div>
+			<div class="content-box margin-top margin-bot">
 				<div class="text-box">
 					<h2 class="content-header">Sub Title / Heading 3</h2>
 					<p class="content-text">
-						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam.
-						Incidunt possimus repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam
-						itaque, inventore qui ducimus blanditiis excepturi cum. Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Repellendus, facilis, obcaecati saepe aliquam soluta laudantium quas deleniti
-						ea eligendi a pariatur velit vero itaque animi hic debitis accusamus eius! Assumenda.
+						Text here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, blanditiis quam. Incidunt possimus
+						repellendus tempore harum et, consectetur sed sapiente quae delectus quibusdam itaque, inventore qui ducimus
+						blanditiis excepturi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, facilis, obcaecati
+						saepe aliquam soluta laudantium quas deleniti ea eligendi a pariatur velit vero itaque animi hic debitis accusamus
+						eius! Assumenda.
 					</p>
 				</div>
 				<img class="small-img margin-left" src="../images/image3-l.jpg" alt="" />
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-follow">
+					<h2>Follow Us</h2>
+					<div class="contact-item" style="cursor: pointer" onclick="window.location='https://instagram.com';">
+						<div class="fab fa-instagram footer-icon"></div>
+						<p class="contact-item-name">Instagram</p>
+					</div>
+					<div class="contact-item" style="cursor: pointer" onclick="window.location='https://facebook.com';">
+						<div class="fab fa-facebook footer-icon"></div>
+						<p class="contact-item-name">Facebook</p>
+					</div>
+					<div class="contact-item" style="cursor: pointer" onclick="window.location='https://twitter.com';">
+						<div class="fab fa-twitter footer-icon"></div>
+						<p class="contact-item-name">Twitter</p>
+					</div>
+				</div>
+				<div class="footer-contact" id="contact">
+					<h2>Contact Us</h2>
+					<div class="contact-item">
+						<div class="fas fa-phone footer-icon"></div>
+						<p class="contact-item-name">Phone</p>
+					</div>
+					<div class="contact-item">
+						<div class="fas fa-envelope-square footer-icon"></div>
+						<p class="contact-item-name">Email</p>
+					</div>
+				</div>
+				<div class="footer-navigation">
+					<h2>Page Navigation</h2>
+					<a class="footer-nav-link" href="#top">Top of Page</a>
+					<a class="footer-nav-link" href="#content-1">Sub Title / Heading 1</a>
+					<a class="footer-nav-link" href="#content-2">Sub Title / Heading 2</a>
+					<a class="footer-nav-link" href="#content-3">Sub Title / Heading 3</a>
+				</div>
 			</div>
 		</div>
 	</body>
