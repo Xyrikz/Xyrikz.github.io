@@ -7,3 +7,20 @@ setInterval(function () {
 		slide = 1;
 	}
 }, 5000);
+
+let mobileToggle = document.querySelector('.mobile-nav-toggle');
+let mobileMenu = document.querySelector('.mobile-nav-links');
+let mobileHome = document.querySelector('.mobile-nav-home');
+let mobileNavButton = document.querySelector('.mobile-contact-toggle');
+
+mobileToggle.addEventListener('click', function () {
+	mobileMenu.classList.toggle('is-active');
+	mobileToggle.classList.toggle('active-color');
+	mobileHome.classList.toggle('active-color');
+});
+
+mobileNavButton.addEventListener('click', function () {
+	mobileMenu.classList.remove('is-active');
+	mobileToggle.classList.remove('active-color');
+	mobileHome.classList.remove('active-color');
+});
